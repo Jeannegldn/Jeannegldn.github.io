@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="progress"></div>
+
+  <!-- Gambar ranting daun (dipakai ulang di beberapa tempat) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="sprig" viewBox="0 0 120 200" fill="currentColor">
+      <path d="M60 200C56 150 70 90 60 12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <path id="lf" d="M0 0C10-14 30-14 42 0C30 14 10 14 0 0Z" transform="translate(60 12) rotate(-90)"/>
+      <path d="M0 0C10-14 30-14 42 0C30 14 10 14 0 0Z" transform="translate(61 160) rotate(-30)"/>
+      <path d="M0 0C10-14 30-14 42 0C30 14 10 14 0 0Z" transform="translate(63 118) rotate(-38)"/>
+      <path d="M0 0C10-14 30-14 42 0C30 14 10 14 0 0Z" transform="translate(65 76) rotate(-46)"/>
+      <path d="M0 0C10-14 30-14 42 0C30 14 10 14 0 0Z" transform="translate(59 142) rotate(-150)"/>
+      <path d="M0 0C10-14 30-14 42 0C30 14 10 14 0 0Z" transform="translate(62 98) rotate(-142)"/>
+      <path d="M0 0C10-14 30-14 42 0C30 14 10 14 0 0Z" transform="translate(63 54) rotate(-134)"/>
+    </symbol>
+  </svg>
+
+  <div class="wrap">
+    <nav id="nav"><div class="nav-pill"><b id="navName"></b><span id="navLinks"></span></div></nav>
+
+    <main>
+      <header class="hero">
+        <div class="photo-wrap">
+          <div class="photo" id="photo"></div>
+        </div>
+        <div class="hero-text">
+          <h1 id="name"></h1>
+          <p class="role" id="role"></p>
+          <p id="tagline"></p>
+          <div id="links"></div>
+        </div>
+      </header>
+
+      <section id="about"><h2>About me</h2>
+        <div class="about"><div class="card reveal" id="aboutText"></div><div class="card reveal"><ul class="facts" id="facts"></ul></div></div>
+      </section>
+      <section id="education"><h2>Pendidikan</h2><div class="grid" id="educationList"></div></section>
+      <section id="experience"><h2>Pengalaman</h2><div class="grid" id="experienceList"></div></section>
+      <section id="projects"><h2>Projects</h2><div class="grid" id="projectList"></div></section>
+      <section id="certificates"><h2>Certificates</h2><div class="grid" id="certList"></div></section>
+      <section id="contact">
+        <div class="panel contact">
+          <h2 id="contactTitle"></h2><div id="contactBtn"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+    <dialog id="dlg"><div class="sheet" id="sheet"><button class="close" id="closeBtn">Tutup</button><div id="sheetBody"></div></div></dialog>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
